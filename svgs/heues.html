@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	Number.prototype.px = function() {
+    		return this + 'px'
+    		// blablabla.style.width = 500.0.px(); instead of blablabla = 500 + 'px'
+    }
+    Number.prototype.percent = function() {
+    	return this + '%'
+    }
+    	
+   	Element.prototype.background = function(hex) {
+   		this.style.background = '#' + hex;
+   	}
+   	Element.prototype.height = function(h) {
+   		this.style.height = h;
+   	}
+   	Element.prototype.width = function(w) {
+   	   	this.style.width = w;
+   	}
+   	document.body.height(100.0.percent());
+
+
+    var block = document.createElement('div');
+    block.height(100.0.percent());
+    block.width(100.0.percent());
+    block.background('200000');
+
+    document.body.appendChild(block);
+   ;
+</script>
+	
+</body>
+</html>
