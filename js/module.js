@@ -18,12 +18,12 @@ var nico  = (function() {
 	});
 	//Anime anchor handler
 	//JQUERY
-	$("a").click(function()	{
-   		 $('html, body').animate({
-       		 scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-   			}, 750);
-    	return false;
-	});
+	//$("a").click(function()	{
+   	//	 $('html, body').animate({
+       	//	 scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+   	//		}, 750);
+    	//return false;
+	//});
 
 	var d = window.setInterval(function() {
 		var date = new Date();
